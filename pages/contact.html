@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rimberio - Contact Us</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../src/css/global.css">
+  <link rel="stylesheet" href="../src/css/layout.css">
+  <link rel="stylesheet" href="../src/css/components.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-container">
+          <img src="../src/assets/icons/rimberiologo.PNG" alt="Rimberio Logo">
+        </div>
+      </a>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="reservation.html" data-i18n="nav_reservation">Reservation</a></li>
+          <li><a href="contact.html" class="active" data-i18n="nav_contact">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn" id="current-lang">EN <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></button>
+          <div class="lang-dropdown">
+            <a href="#" data-lang="en" class="active">EN - English</a>
+            <a href="#" data-lang="tr">TR - Türkçe</a>
+            <a href="#" data-lang="ru">RU - Русский</a>
+          </div>
+        </div>
+        <button class="cart-btn">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../src/assets/2.JPG')">
+      <div class="container hero-content">
+        <h1 data-i18n="contact_page_title">Get in Touch</h1>
+        <p data-i18n="contact_page_subtitle">We'd love to hear from you</p>
+      </div>
+    </section>
+
+    <section class="contact-split-section">
+      <div class="container">
+        <div class="contact-split-grid">
+          
+          <div class="contact-form-wrapper appear">
+            <h2 data-i18n="contact_form_title">Feedback & Support</h2>
+            <p data-i18n="contact_desc">We value your experience! Please use the form below to share your suggestions, report a complaint, or send us your feedback.</p>
+            
+            <form action="#" class="custom-contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" data-i18n="ph_name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" data-i18n="ph_email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <select class="form-control" required>
+                  <option value="" data-i18n="ph_subject" disabled selected>Select Subject</option>
+                  <option value="suggestion" data-i18n="opt_suggestion">Suggestion</option>
+                  <option value="complaint" data-i18n="opt_complaint">Complaint</option>
+                  <option value="other" data-i18n="opt_other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="5" data-i18n="ph_message" placeholder="Please describe your experience or suggestion in detail..." required></textarea>
+              </div>
+              <button type="submit" class="btn-outline submit-btn" data-i18n="contact_btn">Send Message</button>
+            </form>
+          </div>
+
+          <div class="contact-info-wrapper appear" style="transition-delay: 0.2s;">
+            <h2 data-i18n="info_title">Contact Information</h2>
+            
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info-content">
+                <h4 data-i18n="info_location">Location</h4>
+                <p>123 Ocean Drive, Suite 450<br>Miami, FL 33139</p>
+                <a href="https://maps.google.com" target="_blank" class="text-link" data-i18n="open_maps">Open in Google Maps →</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+              <div class="info-content">
+                <h4 data-i18n="info_phone">Phone & WhatsApp</h4>
+                <p><a href="tel:+13055550123" class="text-link">+1 (305) 555-0123</a></p>
+                <a href="https://wa.me/13055550123" target="_blank" class="wa-direct-link" data-i18n="chat_wa">
+                  <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div class="info-content">
+                <h4 data-i18n="info_email">Email</h4>
+                <p><a href="mailto:hello@rimberio.com" class="text-link">hello@rimberio.com</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="far fa-clock"></i></div>
+              <div class="info-content">
+                <h4 data-i18n="info_hours">Opening Hours</h4>
+                <p data-i18n="hours_week"><strong>Mon - Fri:</strong> 11:00 AM - 10:00 PM</p>
+                <p data-i18n="hours_weekend"><strong>Sat - Sun:</strong> 12:00 PM - 11:00 PM</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section appear" style="transition-delay: 0.3s;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.748375837943!2d-80.133208!3d25.774265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b48d860e6113%3A0x868cb267eeb78b27!2sOcean%20Dr%2C%20Miami%20Beach%2C%20FL%2033139%2C%20USA!5e0!3m2!1sen!2str!4v1700000000000!5m2!1sen!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo"><h2>Rimberio</h2></div>
+        <p data-i18n="footer_desc">Experience the art of fine dining where every plate tells a story of passion and excellence.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_explore">Explore</h3>
+        <ul>
+          <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="reservation.html" data-i18n="nav_reservation">Reservation</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_visit">Visit Us</h3>
+        <p>123 Ocean Drive, Suite 450<br>Miami, FL 33139</p>
+        <p>+1 (305) 555-0123</p>
+        <p>hello@rimberio.com</p>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_hours">Hours</h3>
+        <p data-i18n="footer_mon_fri">Mon - Fri: 11am - 10pm</p>
+        <p data-i18n="footer_sat_sun">Sat - Sun: 12pm - 11pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p data-i18n="footer_rights">© 2024 Rimberio. Powered by <strong>Collabify.ai</strong>.</p></div>
+    </div>
+  </footer>
+
+  <script type="module" src="../src/js/main.js"></script>
+</body>
+</html>

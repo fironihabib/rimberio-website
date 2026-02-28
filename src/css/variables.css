@@ -1,0 +1,16 @@
+:root {
+  
+  --primary-color: #9a8062; 
+  --primary-hover: #826a4f;
+  --text-dark: #222222;
+  --text-light: #666666;
+  --bg-light: #f9f9f9;
+  --footer-bg: #2a2a2a;
+  --white: #ffffff;
+  --border-color: #e5e5e5;
+
+  --font-main: 'Poppins', sans-serif; 
+  
+  --container-width: 1200px;
+  --transition-speed: 0.3s;
+}

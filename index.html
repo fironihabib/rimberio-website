@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rimberio - Taste Unique Food</title>
+  
+  <link rel="preload" as="image" href="./src/assets/1.JPG">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./src/css/global.css">
+  <link rel="stylesheet" href="./src/css/layout.css">
+  <link rel="stylesheet" href="./src/css/components.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <div class="logo-container">
+          <img src="./src/assets/icons/rimberiologo.PNG" alt="Rimberio Logo">
+        </div>
+      </a>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="/" class="active" data-i18n="nav_home">Home</a></li>
+          <li><a href="./pages/menu.html" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="./pages/reservation.html" data-i18n="nav_reservation">Reservation</a></li>
+          <li><a href="./pages/contact.html" data-i18n="nav_contact">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn" id="current-lang">EN <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></button>
+          <div class="lang-dropdown">
+            <a href="#" data-lang="en" class="active">EN - English</a>
+            <a href="#" data-lang="tr">TR - Türkçe</a>
+            <a href="#" data-lang="ru">RU - Русский</a>
+          </div>
+        </div>
+
+        <button class="cart-btn">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-slider-container">
+        <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./src/assets/1.JPG')"></div>
+        
+        <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1920&q=80')"></div>
+        
+        <div class="hero-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./src/assets/2.JPG')"></div>
+      </div>
+
+      <div class="container hero-content">
+        <h2 data-i18n="hero_title">TASTE<br>UNIQUE FOOD</h2>
+        <p data-i18n="hero_subtitle">Order food with home delivery or take away</p>
+        
+        <div class="video-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?auto=format&fit=crop&w=800&q=80" alt="Professional Chef">
+        </div>
+        <div class="about-content">
+          <span class="subtitle">Since 1998</span>
+          <h2>Art of Cooking</h2>
+          <p>Rimberio olarak sadece yemek sunmuyoruz; tabağınıza bir sanat eseri bırakıyoruz. Yerel çiftçilerden gelen taze ürünleri, geleneksel tekniklerle birleştiriyoruz.</p>
+          <a href="#" class="btn-outline">Hikayemizi Keşfedin</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="signature-dishes">
+      <div class="container">
+        <div class="section-header">
+          <span class="subtitle">Our Specialities</span>
+          <h2>Signature Dishes</h2>
+        </div>
+        
+        <div class="dishes-grid">
+          <div class="dish-card">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Grilled Salmon">
+              <div class="dish-price">$24.00</div>
+            </div>
+            <div class="dish-info">
+              <h3>Grilled Salmon</h3>
+              <p>Taze somon, kuşkonmaz ve özel limon sosu eşliğinde.</p>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Italian Pizza">
+              <div class="dish-price">$18.00</div>
+            </div>
+            <div class="dish-info">
+              <h3>Italian Pizza</h3>
+              <p>Özel domates sosu, manda mozzarellası ve taze fesleğen.</p>
+            </div>
+          </div>
+
+          <div class="dish-card">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Beef Steak">
+              <div class="dish-price">$32.00</div>
+            </div>
+            <div class="dish-info">
+              <h3>Beef Steak</h3>
+              <p>Dinlendirilmiş antrikot, trüflü patates püresi ile.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-footer">
+          <a href="./pages/menu.html" class="btn-text" data-i18n="explore_btn">Full Menu Explore &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <h2>Rimberio</h2>
+        </div>
+        <p data-i18n="footer_desc">Experience the art of fine dining where every plate tells a story of passion and excellence.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer_explore">Explore</h3>
+        <ul>
+          <li><a href="/" data-i18n="nav_home">Home</a></li>
+          <li><a href="./pages/menu.html" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="./pages/reservation.html" data-i18n="nav_reservation">Reservation</a></li>
+          <li><a href="./pages/contact.html" data-i18n="nav_contact">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer_visit">Visit Us</h3>
+        <p>123 Ocean Drive, Suite 450<br>Miami, FL 33139</p>
+        <p>+1 (305) 555-0123</p>
+        <p>hello@rimberio.com</p>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-i18n="footer_hours">Hours</h3>
+        <p data-i18n="footer_mon_fri">Mon - Fri: 11am - 10pm</p>
+        <p data-i18n="footer_sat_sun">Sat - Sun: 12pm - 11pm</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-i18n="footer_rights">&copy; 2024 Rimberio. Powered by <strong>Collabify.ai</strong>.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/js/main.js"></script>
+</body>
+</html>

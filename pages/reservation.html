@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rimberio - Reservation</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../src/css/global.css">
+  <link rel="stylesheet" href="../src/css/layout.css">
+  <link rel="stylesheet" href="../src/css/components.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-container">
+          <img src="../src/assets/icons/rimberiologo.PNG" alt="Rimberio Logo">
+        </div>
+      </a>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="reservation.html" class="active" data-i18n="nav_reservation">Reservation</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn" id="current-lang">EN <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></button>
+          <div class="lang-dropdown">
+            <a href="#" data-lang="en" class="active">EN - English</a>
+            <a href="#" data-lang="tr">TR - Türkçe</a>
+            <a href="#" data-lang="ru">RU - Русский</a>
+          </div>
+        </div>
+
+        <button class="cart-btn">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7ed9d42339?auto=format&fit=crop&w=1920&q=80')">
+      <div class="container hero-content">
+        <h1 data-i18n="res_page_title">Book a Table</h1>
+        <p data-i18n="res_page_subtitle">Secure your spot for an unforgettable experience</p>
+      </div>
+    </section>
+
+    <section class="reservation-section">
+      <div class="container">
+        <div class="wizard-container">
+          
+          <div class="wizard-progress">
+            <div class="step-indicator active" data-step="1" data-i18n="step_1_title">1. Date & Time</div>
+            <div class="step-indicator" data-step="2" data-i18n="step_2_title">2. Details</div>
+            <div class="step-indicator" data-step="3" data-i18n="step_3_title">3. Contact</div>
+          </div>
+
+          <div class="wizard-form-wrapper">
+            
+            <div class="wizard-step active" id="step-1">
+              <h3>When will you join us?</h3>
+              <div class="form-group">
+                <label for="res-date">Select Date</label>
+                <input type="date" id="res-date" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="res-time">Select Time</label>
+                <input type="time" id="res-time" class="form-control" required>
+              </div>
+              <div class="wizard-actions">
+                <button type="button" class="btn-outline next-btn">Next Step &rarr;</button>
+              </div>
+            </div>
+
+            <div class="wizard-step" id="step-2">
+              <h3>Reservation Details</h3>
+              <div class="form-group">
+                <label for="res-guests">Number of Guests</label>
+                <select id="res-guests" class="form-control">
+                  <option value="1">1 Person</option>
+                  <option value="2" selected>2 People</option>
+                  <option value="3">3 People</option>
+                  <option value="4">4 People</option>
+                  <option value="5">5 People</option>
+                  <option value="6+">6+ (Please call us)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="res-occasion">Occasion (Optional)</label>
+                <select id="res-occasion" class="form-control">
+                  <option value="none">Standard Dining</option>
+                  <option value="birthday">Birthday</option>
+                  <option value="anniversary">Anniversary</option>
+                  <option value="business">Business Dinner</option>
+                </select>
+              </div>
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="call-me-check">
+                <label for="call-me-check" class="inline-label">Beni arayın (Lütfen rezervasyonum için teyit araması yapın)</label>
+              </div>
+
+              <div class="wizard-actions dual-actions">
+                <button type="button" class="btn-text prev-btn">&larr; Back</button>
+                <button type="button" class="btn-outline next-btn">Next Step &rarr;</button>
+              </div>
+            </div>
+
+            <div class="wizard-step" id="step-3">
+              <h3>Your Contact Information</h3>
+              <div class="form-group">
+                <label for="res-name">Full Name</label>
+                <input type="text" id="res-name" class="form-control" placeholder="John Doe">
+              </div>
+              
+              <div class="form-group">
+                <label for="res-phone">Phone Number</label>
+                <div class="phone-input-group">
+                  <select id="country-code" class="form-control country-select">
+                    <option value="+90" selected>+90 (TR)</option>
+                    <option value="+1">+1 (US/CA)</option>
+                    <option value="+44">+44 (UK)</option>
+                    <option value="+49">+49 (DE)</option>
+                    <option value="+33">+33 (FR)</option>
+                    <option value="+39">+39 (IT)</option>
+                    <option value="+971">+971 (UAE)</option>
+                    <option value="+994">+994 (AZ)</option>
+                    <option value="+7">+7 (RU)</option>
+                  </select>
+                  <input type="tel" id="res-phone" class="form-control" placeholder="555 000 0000" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                </div>
+              </div>
+
+              <div class="form-group checkbox-group" style="margin-top: -10px; margin-bottom: 25px;">
+                <input type="checkbox" id="whatsapp-check">
+                <label for="whatsapp-check" class="inline-label">Bu numarada WhatsApp aktif</label>
+              </div>
+
+              <div class="form-group">
+                <label for="res-notes">Special Requests</label>
+                <textarea id="res-notes" class="form-control" rows="3" placeholder="Any dietary restrictions or special requests?"></textarea>
+              </div>
+              <div class="wizard-actions dual-actions">
+                <button type="button" class="btn-text prev-btn">&larr; Back</button>
+                <button type="button" class="btn-outline confirm-btn" data-i18n="res_confirm_btn">Confirm Reservation</button>
+              </div>
+            </div>
+
+            <div class="wizard-step" id="step-success">
+              <div class="success-message">
+                <i class="fas fa-check-circle"></i>
+                <h3>Reservation Confirmed!</h3>
+                <p>Thank you. We have received your request and will send a confirmation message shortly.</p>
+                <a href="../index.html" class="btn-outline" style="margin-top: 20px;">Return to Home</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo"><h2>Rimberio</h2></div>
+        <p data-i18n="footer_desc">Experience the art of fine dining where every plate tells a story of passion and excellence.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_explore">Explore</h3>
+        <ul>
+          <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="reservation.html" data-i18n="nav_reservation">Reservation</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_visit">Visit Us</h3>
+        <p>123 Ocean Drive, Suite 450<br>Miami, FL 33139</p>
+        <p>+1 (305) 555-0123</p>
+        <p>hello@rimberio.com</p>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_hours">Hours</h3>
+        <p data-i18n="footer_mon_fri">Mon - Fri: 11am - 10pm</p>
+        <p data-i18n="footer_sat_sun">Sat - Sun: 12pm - 11pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p data-i18n="footer_rights">&copy; 2024 Rimberio. Powered by <strong>Collabify.ai</strong>.</p></div>
+    </div>
+  </footer>
+
+  <script type="module" src="../src/js/main.js"></script>
+</body>
+</html>

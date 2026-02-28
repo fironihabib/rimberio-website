@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rimberio - Full Menu</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="../src/css/global.css">
+  <link rel="stylesheet" href="../src/css/layout.css">
+  <link rel="stylesheet" href="../src/css/components.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-container">
+          <img src="../src/assets/icons/rimberiologo.PNG" alt="Rimberio Logo">
+        </div>
+      </a>
+
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="menu.html" class="active" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="reservation.html" data-i18n="nav_reservation">Reservation</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact us</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn" id="current-lang">EN <i class="fas fa-chevron-down" style="font-size: 0.8rem;"></i></button>
+          <div class="lang-dropdown">
+            <a href="#" data-lang="en" class="active">EN - English</a>
+            <a href="#" data-lang="tr">TR - Türkçe</a>
+            <a href="#" data-lang="ru">RU - Русский</a>
+          </div>
+        </div>
+        <button class="cart-btn">🛒</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80')">
+      <div class="container hero-content">
+        <h1 data-i18n="menu_page_title">Our Menu</h1>
+        <p data-i18n="menu_page_subtitle">Discover our culinary masterpieces</p>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <div class="container">
+        
+        <div class="menu-filters">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+          <button class="filter-btn" data-filter="starters" data-i18n="filter_starters">Starters</button>
+          <button class="filter-btn" data-filter="mains" data-i18n="filter_mains">Main Courses</button>
+          <button class="filter-btn" data-filter="desserts" data-i18n="filter_desserts">Desserts</button>
+          <button class="filter-btn" data-filter="drinks" data-i18n="filter_drinks">Drinks</button>
+        </div>
+
+        <div class="dishes-grid" id="menu-grid">
+          
+          <div class="dish-card" data-category="starters">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=800&q=80" alt="Crispy Calamari">
+              <div class="dish-price">$15.00</div>
+            </div>
+            <div class="dish-info">
+              <h3 data-i18n="calamari_title">Crispy Calamari</h3>
+              <p data-i18n="calamari_desc">Özel tartar sos ve limon dilimleri eşliğinde altın rengi çıtır kalamar.</p>
+              <button class="add-to-cart-btn" data-i18n="btn_add_cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="dish-card" data-category="starters">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1529312266912-b33cfce2eefd?auto=format&fit=crop&w=800&q=80" alt="Caprese Salad">
+              <div class="dish-price">$14.00</div>
+            </div>
+            <div class="dish-info">
+              <h3 data-i18n="caprese_title">Caprese Salad</h3>
+              <p data-i18n="caprese_desc">Manda mozzarellası, salkım domates ve balzamik sirke.</p>
+              <button class="add-to-cart-btn" data-i18n="btn_add_cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="dish-card" data-category="mains">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Grilled Salmon">
+              <div class="dish-price">$24.00</div>
+            </div>
+            <div class="dish-info">
+              <h3 data-i18n="salmon_title">Grilled Salmon</h3>
+              <p data-i18n="salmon_desc">Taze somon, kuşkonmaz ve özel limon sosu.</p>
+              <button class="add-to-cart-btn" data-i18n="btn_add_cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="dish-card" data-category="mains">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" alt="Beef Steak">
+              <div class="dish-price">$32.00</div>
+            </div>
+            <div class="dish-info">
+              <h3 data-i18n="steak_title">Beef Steak</h3>
+              <p data-i18n="steak_desc">Dinlendirilmiş antrikot, trüflü patates püresi ile.</p>
+              <button class="add-to-cart-btn" data-i18n="btn_add_cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="dish-card" data-category="mains">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Italian Pizza">
+              <div class="dish-price">$18.00</div>
+            </div>
+            <div class="dish-info">
+              <h3 data-i18n="pizza_title">Italian Pizza</h3>
+              <p data-i18n="pizza_desc">Özel domates sosu, manda mozzarellası ve taze fesleğen.</p>
+              <button class="add-to-cart-btn" data-i18n="btn_add_cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="dish-card" data-category="mains">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&q=80" alt="Truffle Pasta">
+              <div class="dish-price">$22.00</div>
+            </div>
+            <div class="dish-info">
+              <h3 data-i18n="pasta_title">Truffle Pasta</h3>
+              <p data-i18n="pasta_desc">El yapımı fettuccine, siyah trüf mantarı kreması ile.</p>
+              <button class="add-to-cart-btn" data-i18n="btn_add_cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="dish-card" data-category="desserts">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&w=800&q=80" alt="Lava Cake">
+              <div class="dish-price">$11.00</div>
+            </div>
+            <div class="dish-info">
+              <h3 data-i18n="lava_title">Chocolate Lava Cake</h3>
+              <p data-i18n="lava_desc">Sıcak çikolata şelalesi ve vanilyalı dondurma.</p>
+              <button class="add-to-cart-btn" data-i18n="btn_add_cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="dish-card" data-category="drinks">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80" alt="Signature Cocktail">
+              <div class="dish-price">$14.00</div>
+            </div>
+            <div class="dish-info">
+              <h3 data-i18n="sunset_title">Sunset Cocktail</h3>
+              <p data-i18n="sunset_desc">Özel şuruplar ve taze meyvelerle hazırlanan imza kokteylimiz.</p>
+              <button class="add-to-cart-btn" data-i18n="btn_add_cart">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="dish-card" data-category="drinks">
+            <div class="dish-image">
+              <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" alt="Iced Latte">
+              <div class="dish-price">$6.00</div>
+            </div>
+            <div class="dish-info">
+              <h3 data-i18n="latte_title">Caramel Iced Latte</h3>
+              <p data-i18n="latte_desc">Soğuk demlenmiş espresso, süt ve karamel şurubu.</p>
+              <button class="add-to-cart-btn" data-i18n="btn_add_cart">Add to Cart</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo"><h2>Rimberio</h2></div>
+        <p data-i18n="footer_desc">Experience the art of fine dining where every plate tells a story of passion and excellence.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_explore">Explore</h3>
+        <ul>
+          <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
+          <li><a href="menu.html" data-i18n="nav_menu">Menu</a></li>
+          <li><a href="reservation.html" data-i18n="nav_reservation">Reservation</a></li>
+          <li><a href="contact.html" data-i18n="nav_contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_visit">Visit Us</h3>
+        <p>123 Ocean Drive, Suite 450<br>Miami, FL 33139</p>
+        <p>+1 (305) 555-0123</p>
+        <p>hello@rimberio.com</p>
+      </div>
+      <div class="footer-col">
+        <h3 data-i18n="footer_hours">Hours</h3>
+        <p data-i18n="footer_mon_fri">Mon - Fri: 11am - 10pm</p>
+        <p data-i18n="footer_sat_sun">Sat - Sun: 12pm - 11pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p data-i18n="footer_rights">© 2024 Rimberio. Powered by <strong>Collabify.ai</strong>.</p></div>
+    </div>
+  </footer>
+
+  <script type="module" src="../src/js/main.js"></script>
+</body>
+</html>
