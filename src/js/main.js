@@ -143,10 +143,17 @@ document.addEventListener('DOMContentLoaded', () => {
       ph_name: "Your Name", ph_email: "Your Email", ph_subject: "Select Subject", opt_suggestion: "Suggestion", opt_complaint: "Complaint", opt_other: "Other", ph_message: "Please describe your experience or suggestion in detail...",
       info_title: "Contact Information", info_location: "Location", open_maps: "Open in Google Maps &rarr;", info_phone: "Phone & WhatsApp", chat_wa: "Chat on WhatsApp", info_email: "Email", info_hours: "Opening Hours",
       hours_week: "<strong>Mon - Fri:</strong> 11:00 AM - 10:00 PM", hours_weekend: "<strong>Sat - Sun:</strong> 12:00 PM - 11:00 PM",
-      footer_desc: "Experience the art of fine dining where every plate tells a story of passion and excellence.", footer_explore: "Explore", footer_visit: "Visit Us", footer_hours: "Hours", footer_mon_fri: "Mon - Fri: 11am - 10pm", footer_sat_sun: "Sat - Sun: 12pm - 11pm", footer_rights: "&copy; 2024 Rimberio. Powered by < Collabify.ai </strong>.",
+      footer_desc: "Experience the art of fine dining where every plate tells a story of passion and excellence.", footer_explore: "Explore", footer_visit: "Visit Us", footer_hours: "Hours", footer_mon_fri: "Mon - Fri: 11am - 10pm", footer_sat_sun: "Sat - Sun: 12pm - 11pm", footer_rights: "&copy; 2026 Rimberio. Powered by <strong>Collabify.ai</strong>.",
       // CART TRANSLATIONS
       cart_title: "Your Cart", cart_total: "Total:", cart_checkout: "Checkout", cart_empty: "Your cart is empty.",
-      cart_added: "✓ Added" 
+      cart_added: "✓ Added",
+      // INDEX PAGE ABOUT & SIGNATURE TRANSLATIONS
+      about_subtitle: "Since 1998",
+      about_title: "Art of Cooking",
+      about_desc: "At Rimberio, we don't just serve food; we leave a work of art on your plate. We combine fresh produce from local farmers with traditional techniques.",
+      about_btn: "Discover Our Story",
+      sig_subtitle: "Our Specialities",
+      sig_title: "Signature Dishes"
     },
     tr: {
       nav_home: "Ana Sayfa", nav_menu: "Menü", nav_reservation: "Rezervasyon", nav_contact: "İletişim",
@@ -172,7 +179,14 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_desc: "Her tabağın tutku ve mükemmellik hikayesini anlattığı ince yemek sanatını deneyimleyin.", footer_explore: "Keşfet", footer_visit: "Bizi Ziyaret Edin", footer_hours: "Çalışma Saatleri", footer_mon_fri: "Pzt - Cum: 11:00 - 22:00", footer_sat_sun: "Cmt - Paz: 12:00 - 23:00", footer_rights: "&copy; 2026 Rimberio. <strong>communitydevs group</strong> tarafından hazırlandı.",
       // CART TRANSLATIONS
       cart_title: "Sepetiniz", cart_total: "Toplam:", cart_checkout: "Ödeme Yap", cart_empty: "Sepetiniz boş.",
-      cart_added: "✓ Eklendi" 
+      cart_added: "✓ Eklendi",
+      // INDEX PAGE ABOUT & SIGNATURE TRANSLATIONS
+      about_subtitle: "1998'den Beri",
+      about_title: "Aşçılık Sanatı",
+      about_desc: "Rimberio olarak sadece yemek sunmuyoruz; tabağınıza bir sanat eseri bırakıyoruz. Yerel çiftçilerden gelen taze ürünleri, geleneksel tekniklerle birleştiriyoruz.",
+      about_btn: "Hikayemizi Keşfedin",
+      sig_subtitle: "Özel Lezzetlerimiz",
+      sig_title: "İmza Yemeklerimiz"
     },
     ru: {
       nav_home: "Главная", nav_menu: "Меню", nav_reservation: "Бронь", nav_contact: "Контакты",
@@ -198,7 +212,14 @@ document.addEventListener('DOMContentLoaded', () => {
       footer_desc: "Почувствуйте искусство изысканной кухни, где каждое блюдо рассказывает историю страсти и мастерства.", footer_explore: "Исследовать", footer_visit: "Приходите к нам", footer_hours: "Часы работы", footer_mon_fri: "Пн - Пт: 11:00 - 22:00", footer_sat_sun: "Сб - Вс: 12:00 - 23:00", footer_rights: "&copy; 2026 Rimberio. Разработано <strong>communitydevs group</strong>.",
       // CART TRANSLATIONS
       cart_title: "Ваша корзина", cart_total: "Итого:", cart_checkout: "Оформить заказ", cart_empty: "Ваша корзина пуста.",
-      cart_added: "✓ Добавлено" 
+      cart_added: "✓ Добавлено",
+      // INDEX PAGE ABOUT & SIGNATURE TRANSLATIONS
+      about_subtitle: "С 1998 года",
+      about_title: "Искусство кулинарии",
+      about_desc: "В Rimberio мы не просто подаем еду; мы оставляем произведение искусства на вашей тарелке. Мы сочетаем свежие продукты от местных фермеров с традиционными методами.",
+      about_btn: "Узнать нашу историю",
+      sig_subtitle: "Наши фирменные блюда",
+      sig_title: "Фирменные блюда"
     }
   };
 
@@ -380,7 +401,6 @@ document.addEventListener('DOMContentLoaded', () => {
           btn.style.backgroundColor = '';
           btn.style.color = '';
         }, 1200);
-      
       });
     });
 
